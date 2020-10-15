@@ -1,0 +1,59 @@
+{
+  "CreateType": "Website",
+  "IsPrimary": true,
+  "IsShared": false,
+  "IsTimeWindowEnabled": false,
+  "ProfileName": "ExampleBasicAuthProfile - Created by API",
+  "TargetUri": "http://rest.testsparker.com/",
+  "CrawlAndAttack": true,
+  "EnableHeuristicChecksInCustomUrlRewrite": true,
+  "ExcludedLinks": [
+    {
+      "RegexPattern": "(log|sign)\\-?(out|off)"
+    },
+    {
+      "RegexPattern": "exit"
+    },
+    {
+      "RegexPattern": "endsession"
+    },
+    {
+      "RegexPattern": "gtm\\.js"
+    },
+    {
+      "RegexPattern": "WebResource\\.axd"
+    },
+    {
+      "RegexPattern": "ScriptResource\\.axd"
+    }
+  ],
+  "DisallowedHttpMethods": [],
+  "ExcludeLinks": true,
+  "FindAndFollowNewLinks": true,
+  "BasicAuthenticationApiModel": {
+    "Credentials": [
+      {
+        "AuthenticationType": "Basic",
+        "Password": "123456",
+        "UriPrefix": "http://rest.testsparker.com/basic_authentication/api/",
+        "UserName": "admin"
+      }
+    ],
+    "IsEnabled": true,
+    "NoChallenge": false
+  },
+  "IsMaxScanDurationEnabled": false,
+  "MaxDynamicSignatures": 60,
+  "MaxScanDuration": 48,
+  "Scope": "EnteredPathAndBelow",
+  "SubPathMaxDynamicSignatures": 30,
+  "UrlRewriteAnalyzableExtensions": "htm,html",
+  "UrlRewriteBlockSeparators": "/$.,;|:",
+  "UrlRewriteMode": "Heuristic",
+  "UrlRewriteRules": [
+    {
+      "PlaceholderPattern": "/blog/{category}/{title}"
+    }
+  ],
+  "DoNotDifferentiateProtocols": true
+}

@@ -1,0 +1,83 @@
+{
+  "Name": "ScheduledScanOAuth2 - By API",
+  "NextExecutionTime": "01/01/2022 01:10 PM",
+  "ScheduleRunType": "Once",
+  "TargetUri": "http://rest.testsparker.com/",
+  "CrawlAndAttack": true,
+  "EnableHeuristicChecksInCustomUrlRewrite": true,
+  "ExcludedLinks": [
+    {
+      "RegexPattern": "(log|sign)\\-?(out|off)"
+    },
+    {
+      "RegexPattern": "exit"
+    },
+    {
+      "RegexPattern": "endsession"
+    },
+    {
+      "RegexPattern": "gtm\\.js"
+    },
+    {
+      "RegexPattern": "WebResource\\.axd"
+    },
+    {
+      "RegexPattern": "ScriptResource\\.axd"
+    }
+  ],
+  "DisallowedHttpMethods": [],
+  "ExcludeLinks": true,
+  "FindAndFollowNewLinks": true,
+  "OAuth2SettingModel": {
+    "FlowType": "ClientCredentials",
+    "AuthenticationType": "None",
+    "AccessTokenEndpoint": {
+      "Url": "http://rest.testsparker.com:8080/token",
+      "ContentType": "application/x-www-form-urlencoded",
+      "Method": "POST"
+    },
+    "AccessTokenItems": [
+      {
+        "Name": "grant_type",
+        "Value": "client_credentials",
+        "IsEncrypted": false
+      },
+      {
+        "Name": "client_id",
+        "Value": "rest.testsparker.com",
+        "IsEncrypted": false
+      },
+      {
+        "Name": "client_secret",
+        "Value": "n3tsp4rk3r_s3cr3t",
+        "IsEncrypted": false
+      },
+      {
+        "Name": "scope",
+        "Value": "basic",
+        "IsEncrypted": false
+      }	  
+    ],
+    "ResponseFields": {
+      "AccessToken": "access_token",
+      "RefreshToken": "refresh_token",
+      "Expire": "expires_in",
+      "TokenType": "token_type",
+      "IsTokenTypeFixed": true
+    }
+  },
+  "IsMaxScanDurationEnabled": false,
+  "MaxDynamicSignatures": 60,
+  "MaxScanDuration": 48,
+  "Scope": "EnteredPathAndBelow",
+  "SubPathMaxDynamicSignatures": 30,
+  "UrlRewriteAnalyzableExtensions": "htm,html",
+  "UrlRewriteBlockSeparators": "/$.,;|:",
+  "UrlRewriteMode": "Heuristic",
+  "UrlRewriteRules": [
+    {
+      "PlaceholderPattern": "/blog/{category}/{title}"
+    }
+  ],
+  "DoNotDifferentiateProtocols": true
+}

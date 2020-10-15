@@ -1,0 +1,21 @@
+{
+  "PolicyId": "b20186662a01e411976c0a45dbb897e8",
+  "ReportPolicyId": "013660af56b7417685becf2b84966816",
+  "TimeWindow": {
+    "Items": [
+      {
+        "Day": "Sunday",
+        "From": "01:00",
+        "ScanningAllowed": false,
+        "To": "03:00"
+      },
+	  {
+		"Day": "Tuesday",
+		"From": "02:00",
+		"ScanningAllowed": false,
+		"To": "05:00"
+	  }
+    ]
+  },
+  "WebsiteGroupName": "GROUP1"
+}
