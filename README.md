@@ -28,13 +28,21 @@ To download & install both of the modules, open CLI, navigate to the project's f
 pip install -r requirements.txt
 ```
 
-## **Running a script**
+## **Settings config.JSON**
 
 First, we need to configure the **config.json** according to our accounts on Netsparker Enterprise. Navigate to Netsparker Enterprise on any browser and log into your account. Click on your name which is located at the top-right corner of the page and select *API Settings*. After entering your account password, the *User ID* and the *Token* will be revealed.
 
 In the project's folder, find and open **config.json** with a text editor. Now, copy the 2 values described above and paste it into **config.json**. The values must be inside the quotes.
 
-Leave the 3rd parameter (*API_ROOT*) as it is and save & close **config.json**.
+As for the 3rd parameter (*API_ROOT*), it should point out to the root URL. For default, it is set to https://www.netsparkercloud.com/api/1.0/%s . If you use Netsparker Enterprise on EU region or Netsparker Enterprise On-Premises version, you need to modify this value as well. Examples;
+
+EU Region -> "API_ROOT": "https://eu.netsparker.cloud/api/1.0/%s"
+Sample On-Premises -> "API_ROOT": "https://netsparker.mycompany.com/api/1.0/%s"
+Another sample On-Premises -> "API_ROOT": "http://localhost/api/1.0/%s"
+
+Once everything is done, save & close **config.json**.
+
+## **Running a script**
 
 Run **cmd.exe** and navigate to the folder where the scripts are located. Execute the script file using the necessary/desired arguments. A sample command should be like this;
 
