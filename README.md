@@ -1,4 +1,4 @@
-# **Python Scripts for Netsparker Enterprise API Endpoints**
+# **Python Scripts for Netsparker Enterprise API Endpoints** 
 
 The scripts are constructed to be used through CLI. Arguments need to be passed for most of them.
 
