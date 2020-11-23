@@ -28,7 +28,7 @@ To download & install both of the modules, open CLI, navigate to the project's f
 pip install -r requirements.txt
 ```
 
-## **Settings config.JSON**
+**3) Setting config.JSON File**
 
 First, we need to configure the **config.json** according to our accounts on Netsparker Enterprise. Navigate to Netsparker Enterprise on any browser and log into your account. Click on your name which is located at the top-right corner of the page and select *API Settings*. After entering your account password, the *User ID* and the *Token* will be revealed.
 
