@@ -37,7 +37,9 @@ In the project's folder, find and open **config.json** with a text editor. Now, 
 As for the 3rd parameter (*API_ROOT*), it should point out to the root URL. For default, it is set to https://www.netsparkercloud.com/api/1.0/%s . If you use Netsparker Enterprise on EU region or Netsparker Enterprise On-Premises version, you need to modify this value as well. Examples;
 
 EU Region -> "API_ROOT": "https://eu.netsparker.cloud/api/1.0/%s"
+
 Sample On-Premises -> "API_ROOT": "https://netsparker.mycompany.com/api/1.0/%s"
+
 Another sample On-Premises -> "API_ROOT": "http://localhost/api/1.0/%s"
 
 Once everything is done, save & close **config.json**.
