@@ -19,16 +19,16 @@ def scans_new():
     args = parser.parse_args()
 
     if args.s == "Form":
-        scan = "Scans_NewSampleForm.json"
+        scan = "Scans_NewFormAuth.json"
 
     elif args.s == "Basic":
-        scan = "Scans_NewSampleBasic.json"
+        scan = "Scans_NewBasicAuth.json"
     
     elif args.s == "Header":
-        scan = "Scans_NewSampleHeader.json"
+        scan = "Scans_NewHeaderAuth.json"
     
     elif args.s == "OAuth2":
-        scan = "Scans_NewSampleOAuth2.json"
+        scan = "Scans_NewOAuth2.json"
     
     file = open(scan, "r")
     json_object = json.load(file)
